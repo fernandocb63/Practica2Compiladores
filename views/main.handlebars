@@ -1,0 +1,10 @@
+
+<h1 style="text-align: center;">Noticias</h1>
+<br>
+<br>
+<br>
+{{#each noti}}
+        <div class="col-2 col-sm-4 col-lg-12 title"><img src={{urlToImage}} width=60% height=50%><br>{{title}}</div>
+        <div class="col-2 col-sm-3 col-lg-6 description">{{description}}</div>
+        <div class="col-2 col-sm-3 col-lg-6 description"><a href={{url}}>Ver mas...</a></div>
+{{/each}}
