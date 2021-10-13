@@ -13,7 +13,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search News" aria-label="Search" id="s">
+            <input class="form-control me-2" type="text" placeholder="Search News" aria-label="Search" id="s" name="s">
             <button class="btn btn-outline-success" id="searchBtn" onclick="search()" type="submit">Search</button>
             </form>
         </div>
@@ -29,7 +29,7 @@
             let term = document.getElementById('s').value;
             term.toLowerCase();
             console.log(term);
-            window.location = `/?term=${term}`;
+            window.location = `/noticias?s=${term}`;
 }
 </script>
 </body>
